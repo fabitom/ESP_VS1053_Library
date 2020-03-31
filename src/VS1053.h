@@ -44,7 +44,7 @@ private:
     uint8_t dcs_pin;                        // Pin where DCS line is connected
     uint8_t dreq_pin;                       // Pin where DREQ line is connected
     uint8_t curvol;                         // Current volume setting 0..100%
-    int8_t  curbalance;                     // Current balance setting -100..100
+    int8_t  curbalance = 0;                 // Current balance setting -100..100
                                             // (-100 = right channel silent, 100 = left channel silent)
     const uint8_t vs1053_chunk_size = 32;
     // SCI Register
